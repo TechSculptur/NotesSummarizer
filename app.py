@@ -3,6 +3,8 @@ from fastapi.responses import HTMLResponse,FileResponse
 import shutil
 import os
 from preprocessing import extract,generator,summarizer    
+os.makedirs("uploads", exist_ok=True)
+os.makedirs("summary", exist_ok=True)
 app=FastAPI()
 MAX_SIZE = 100* 1024 * 1024 
 @app.get("/")
