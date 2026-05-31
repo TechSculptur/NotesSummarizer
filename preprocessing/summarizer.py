@@ -15,8 +15,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 # path=os.path.abspath('data.txt')
-with open('preprocessing/data.txt','r',encoding='UTF-8') as f1:
-    txt=f1.read()
+
 
 def preprocess(text):
     text = re.sub(r' +', ' ', text)
