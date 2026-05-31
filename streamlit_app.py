@@ -26,8 +26,8 @@ if uploaded_file is not None:
             }
 
             response = requests.post(
-                "http://127.0.0.1:8000/upload",
-                files=files
+                    "https://notessummarizer-7zi7.onrender.com/upload",
+                    files=files
             )
 
             if response.status_code == 200:
